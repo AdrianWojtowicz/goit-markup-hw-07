@@ -2,7 +2,7 @@ body {
     font-family: Roboto;
 }
 
-header {
+.header {
     height: 80px;
 }
 
@@ -14,22 +14,20 @@ header {
     flex-wrap: nowrap;
 }
 
-.logo-header {
-    width: 145px;
-    height: 31px;
+.logo {
     font-family: Raleway;
     font-weight: bold;
     font-size: 26px;
     letter-spacing: 0.03em;
-    color: #000000;
     text-decoration: none;
+    color: #000;
 }
 
-.web {
+.logo__web {
     color: #2196F3;
 }
 
-nav {
+.nav {
     min-width: 254px;
     margin-left: 93px;
     display: flex;
@@ -37,7 +35,7 @@ nav {
     align-items: center;
 }
 
-.agencja, .agencja-aktywny {
+.nav__agency, .nav__agency--active{
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -45,16 +43,16 @@ nav {
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.agencja:hover, 
-.agencja:focus {
+.nav__agency:hover, 
+.nav__agency:focus {
     color: #2196F3;
 }
 
-.agencja-aktywny {
+.nav__agency--active {
     color: #2196f3;
 }
 
-.portfolio, .portfolio-aktywny {
+.nav__portfolio, .nav__portfolio--active {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -63,19 +61,19 @@ nav {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-aktywny {
+.nav__portfolio--active {
     color: #2196F3;
 }
 
-.portfolio:hover,
-.portfolio:focus {
+.nav__portfolio:hover,
+.nav__portfolio:focus {
     color: #2196F3;
 }
 
-.agencja-aktywny, .portfolio-aktywny {
+.nav__agency--active, .nav__portfolio--active {
     position: relative;
 }
-.agencja-aktywny::after, .portfolio-aktywny::after {
+.nav__agency--active::after, .nav__portfolio--active::after {
     content: "";
     position: absolute;
     height: 4px;
@@ -85,16 +83,16 @@ nav {
     left: 0;
 }
 
-.agencja-aktywny::after {
+.nav__agency--active::after {
     width: 53px;
 }
 
-.portfolio-aktywny::after {
+.nav__portfolio--active::after {
     width: 58px;
 }
 
 
-.kontakt {
+.nav__contact {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -103,16 +101,16 @@ nav {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.kontakt:hover,
-.kontakt:focus,
+.nav__contact:hover,
+.nav__contact:focus,
 .tel-menu:hover,
 .tel-menu:focus,
 .email-menu:hover,
 .email-menu:focus,
-.mail-footer:hover,
-.mail-footer:focus,
-.tel-footer:hover,
-.tel-footer:focus {
+.adress__mail--footer:hover,
+.adress__mail--footer:focus,
+.adress__tel--footer:hover,
+.adress__tel--footer:focus {
     color: #2196F3;
     cursor: pointer;
 }
@@ -137,11 +135,11 @@ nav {
     margin-left: 30px;
 }
 
-.icon-mail, .icon-smartphone {
+.email-menu__icon, .tel-menu__icon {
     fill: currentColor;
 }
 
-.efektywne {
+.effect {
     height: 600px;
     background-color: #2F303A;
     background-image: linear-gradient(
@@ -152,14 +150,14 @@ nav {
     background-size: cover;
 }
 
-.efektywne2 {
+.effective {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.efektywne-tekst {
+.effective__text {
     width: 696px;
     margin-bottom: 0px;
     justify-content: center;
@@ -172,7 +170,7 @@ nav {
     color: #FFFFFF;
 }
 
-.button-zamow-usluge {
+.effective__button {
     width: 200px;
     height: 50px;
     margin-top: 30px;
@@ -185,16 +183,14 @@ nav {
     border-radius: 4px;
 }
 
-.atuty {
+.adv {
     height: 345px;
     padding-top: 94px;
 }
-.atuty-box {
+
+.advantages-table {
     width: 1170px;
     height: 251px;
-}
-
-.tabela-atuty {
     list-style: none;
     padding: 0px;
     margin: 0px;
@@ -202,7 +198,7 @@ nav {
     justify-content: space-between;
 }
 
-.atuty1, .atuty2, .atuty3, .atuty4 {
+.advantages-table__list--icon {
     width: 270px;
     height: 120px;
     background: #F5F4FA;
@@ -212,11 +208,11 @@ nav {
     justify-content: center;
 }
 
-.t1, .t2, .t3, .t4 {
+.advantages-table__list {
     width: 270px;
 }
 
-.t1-naglowek, .t2-naglowek, .t3-naglowek, .t4-naglowek {
+.advantages-table__list--head {
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 0.03em;
@@ -226,7 +222,7 @@ nav {
     margin-top: 30px;
 }
 
-.t1-tresc, .t2-tresc, .t3-tresc, .t4-tresc {
+.advantages-table__list--text {
     width: 270px;
     height: 75px;
     margin-top: 10px;
@@ -237,13 +233,13 @@ nav {
     color: #757575;
 } 
 
-.zajecia {
+.activ {
     height: 574px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.zajecia2 {
+.activities {
     width: 1170px;
     height: 386px;
     display: flex;
@@ -251,7 +247,9 @@ nav {
     justify-content: space-between;
 }
 
-.zajecia-naglowek, .nasz-zespół, .nasi-klienci  {
+.activities-head, 
+.our-team__head, 
+.our-customer__head  {
     font-weight: bold;
     font-size: 36px;
     text-align: center;
@@ -260,16 +258,16 @@ nav {
     margin: 0px;
 }
 
-.zajecia-przyklady {
+.activities-example {
     display: flex;
     justify-content: space-between;
 }
 
-.box1, .box2, .box3 {
+.activities-example__box {
     position: relative;
     height: 294px;
 }
-.zajęcia-podpis {
+.activities-example__box-text {
     font-weight: bold;
     line-height: 1.1;
     text-align: center;
@@ -286,17 +284,17 @@ nav {
     padding: 27px;
 }
 
-.zespol {
+.team {
     height: 708px;
     background: #F5F4FA;
 }
-.zespol2 {
+.our-team {
     padding-top: 94px;
     padding-bottom: 94px;
     justify-content: center;
 }
 
-.tabela-zespol {
+.our-team__table {
     list-style: none;
     margin-top: 50px;
     margin-bottom: 0;
@@ -308,7 +306,7 @@ nav {
     justify-content: space-between;
 }
 
-.zespol-1, .zespol-2, .zespol-3, .zespol-4 {
+.our-team__table-box {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -316,7 +314,7 @@ nav {
     height: 428px;
 }
 
-.zespol-1-imie, .zespol-2-imie, .zespol-3-imie, .zespol-4-imie {
+.our-team__table-box-name {
     font-weight: 500;
     font-size: 16px;
     text-align: center;
@@ -326,7 +324,7 @@ nav {
     margin-top: 30px;
 }
 
-.zespol-1-stan, .zespol-2-stan, .zespol-3-stan, .zespol-4-stan {
+.our-team__table-box-position {
     font-size: 16px;
     text-align: center;
     letter-spacing: 0.03em;
@@ -335,7 +333,7 @@ nav {
     margin-top: 10px;
 }
 
-.social {
+.social-icon {
     width: 206px;
     height: 44px;
     margin: 16px auto;
@@ -344,7 +342,7 @@ nav {
     justify-content: space-between;
 }
 
-.social-icon-background, .social-icon-background-footer {
+.social-icon--background, .social-icons-footer--background {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -354,38 +352,41 @@ nav {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon-background:hover, .social-icon-background:focus {
+.social-icon--background:hover, .social-icon--background:focus {
     background-color: #2196F3;
     cursor: pointer;
 }
 
-.social-icon-background:hover > .instagram, 
-.social-icon-background:hover > .twitter, 
-.social-icon-background:hover > .facebook, 
-.social-icon-background:hover > .linkedin,
-.social-icon-background:focus > .instagram, 
-.social-icon-background:focus > .twitter, 
-.social-icon-background:focus > .facebook, 
-.social-icon-background:focus > .linkedin {
+.social-icon--background:hover > .social-icon__instagram, 
+.social-icon--background:hover > .social-icon__twitter, 
+.social-icon--background:hover > .social-icon__facebook, 
+.social-icon--background:hover > .social-icon__linkedin,
+.social-icon--background:focus > .social-icon__instagram, 
+.social-icon--background:focus > .social-icon__twitter, 
+.social-icon--background:focus > .social-icon__facebook, 
+.social-icon--background:focus > .social-icon__linkedin {
     fill: #fff;
 }
 
-.instagram, .twitter, .facebook, .linkedin {
+.social-icon__instagram, 
+.social-icon__twitter, 
+.social-icon__facebook, 
+.social-icon__linkedin {
     fill: #afb1b8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.klienci {
+.customer {
     height: 372px;
     padding: 94px 0;
 }
 
-.klienci2 {
+.our-customer {
     width: 1170px;
     height: 184px;
 }
 
-.lista-klientów {
+.our-customer__list {
     list-style: none;
     margin-top: 50px;
     margin-bottom: 0;
@@ -394,7 +395,7 @@ nav {
     justify-content: space-between;
 }
 
-.klient1, .klient2, .klient3, .klient4, .klient5, .klient6 {
+.our-customer__list-box {
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
@@ -405,38 +406,28 @@ nav {
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-klient1, .icon-klient2, .icon-klient3, .icon-klient4, .icon-klient5, .icon-klient6 {
+.our-customer__list-box-icon {
     fill: #afb1b8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.klient1:hover, .klient2:hover, .klient3:hover, .klient4:hover, .klient5:hover, .klient6:hover,
-.klient1:focus, .klient2:focus, .klient3:focus, .klient4:focus, .klient5:focus, .klient6:focus {
+.our-customer__list-box:hover,
+.our-customer__list-box:focus {
     border-color: #2196F3;
     cursor: pointer;
 }
 
-.klient1:hover > .icon-klient1, 
-.klient2:hover > .icon-klient2, 
-.klient3:hover > .icon-klient3, 
-.klient4:hover > .icon-klient4, 
-.klient5:hover > .icon-klient5, 
-.klient6:hover > .icon-klient6,
-.klient1:focus > .icon-klient1, 
-.klient2:focus > .icon-klient2, 
-.klient3:focus > .icon-klient3, 
-.klient4:focus > .icon-klient4, 
-.klient5:focus > .icon-klient5, 
-.klient6:focus > .icon-klient6  {
+.our-customer__list-box:hover > .our-customer__list-box-icon, 
+.our-customer__list-box:focus > .our-customer__list-box-icon {
     fill: #2196F3;
 }
 
-.footer {
+.foot {
     height: 252px;
     background: #2F303A;
 }
 
-.footer2 {
+.footer {
     width: 1200px;
     height: 252px;
     padding-left: 15px;
@@ -445,16 +436,7 @@ nav {
     display: flex;
 }
 
-.logo-footer {
-    font-family: Raleway;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-}
-
-.studio-footer {
+.logo__studio--footer {
     color: #FFFFFF;
 }
 
@@ -473,16 +455,16 @@ nav {
     flex-wrap: nowrap;
 }
 
-.adres-footer {
+.adress__adres--footer {
     color: #FFFFFF;
 }
 
-.mail-footer, .tel-footer {
+.adress__mail--footer, .adress__tel--footer {
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-footer {
+.join-us-footer {
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
@@ -493,7 +475,7 @@ nav {
     margin-left: 70px;
 }
 
-.social-footer-icons {
+.social-icons-footer {
     width: 206px;
     height: 44px;
     margin-top: 20px;
@@ -501,21 +483,24 @@ nav {
     justify-content: space-between;
 }
 
-.social-icon-background-footer {
+.social-icons-footer--background {
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon-background-footer:hover, .social-icon-background-footer:focus {
+.social-icons-footer--background:hover, .social-icons-footer--background:focus {
     background-color: #2196F3;
     cursor: pointer;
 }
 
-.instagram-footer, .twitter-footer, .facebook-footer, .linkedin-footer {
+.social-icons-footer__instagram, 
+.social-icons-footer__twitter, 
+.social-icons-footer__facebook, 
+.social-icons-footer__linkedin {
     fill: #fff;
 }
 
-.newsletter {
+.sign-up {
     width: 570px;
     height: 86px;
     margin-top: 12px;
@@ -528,12 +513,12 @@ nav {
     color: #FFFFFF;
 }
 
-.newsletter2 {
+.newsletter {
     display: flex;
     margin-top: 20px;
 }
 
-.newsletter-email {
+.newsletter__email {
     width: 358px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -545,11 +530,11 @@ nav {
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.newsletter-email:focus {
+.newsletter__email:focus {
     border-color: #2196f3;
 }
 
-.newsletter-button {
+.newsletter__button {
     width: 200px;
     height: 50px;
     background: #2196F3;
@@ -563,19 +548,19 @@ nav {
     padding-left: 42px;
 }
 
-.icon-send {
+.newsletter__button--icon-send {
     fill: #fff;
     margin-left: 24px;
 }
 
 
-.portfolio-strona {
+.portfolio-page {
     height: 1548px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.portfolio-strona2 {
+.portfolio-list {
     width: 1170px;
     height: 1360px;
     display: flex;
@@ -584,7 +569,7 @@ nav {
     align-items: center;
 }
 
-.filtry {
+.portfolio-buttons {
     width: 572px;
     height: 54px;
     list-style: none;
@@ -594,11 +579,13 @@ nav {
     justify-content: space-between;
 }
 
-button {
+button,
+.portfolio-buttons__button {
     height: 38px;
     background: #F5F4FA;
     border-radius: 4px;
     border: none;
+    box-shadow: none;
     font-weight: 500;
     font-style: normal;
     font-size: 16px;
@@ -610,14 +597,16 @@ button {
     transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-button:hover, button:focus {
+button,
+.portfolio-buttons__button:hover, 
+.portfolio-buttons__button:focus {
     background: #2196F3;
     color: #fff;
     cursor: pointer;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.projekty {
+.portfolio-projects {
     width: 1170px;
     height: 1272px;
     list-style: none;
@@ -628,19 +617,20 @@ button:hover, button:focus {
     align-content: space-between;
 }
 
-.kontener {
+.portfolio-projects-container {
     width: 370px;
     height: 404px;
     border: 1px solid #EEEEEE;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.kontener:hover, .kontener:focus {
+.portfolio-projects-container:hover, 
+.portfolio-projects-container:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     cursor: pointer;
 }
 
-.projekt-tytul {
+.portfolio-projects-container__title {
     font-weight: bold;
     font-size: 18px;
     letter-spacing: 0.06em;
@@ -649,7 +639,7 @@ button:hover, button:focus {
     margin-left: 24px;
 }
 
-.projekt-podpis {
+.portfolio-projects-container__text {
     font-size: 16px;
     letter-spacing: 0.03em;
     color: #757575;
@@ -657,12 +647,12 @@ button:hover, button:focus {
     margin-left: 24px;
 }
 
-.projekt-box {
+.portfolio-projects-container__box {
     position: relative;
     overflow: hidden;
 }
 
-.projekt-overlay {
+.portfolio-projects-container__box--overlay {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -680,7 +670,8 @@ button:hover, button:focus {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.kontener:hover .projekt-overlay, .kontener:focus .projekt-overlay {
+.portfolio-projects-container:hover .portfolio-projects-container__box--overlay, 
+.portfolio-projects-container:focus .portfolio-projects-container__box--overlay {
     transform: translateY(0);
 }
 
@@ -715,8 +706,10 @@ button:hover, button:focus {
     position: relative;
 }
 
-.close-button {
+.modal__button-close {
     position: absolute;
+    background-color: #fff;
+    box-shadow: none;
     width: 30px;
     height: 30px;
     right: 8px;
@@ -729,12 +722,13 @@ button:hover, button:focus {
     padding: 0;
 }
 
-.close-button:hover {
+.modal__button-close:hover,
+.modal__button-close:focus {
     background-color: #fff;
     box-shadow: none; 
 }
 
-.close-button-icon {
+.modal__button-close-icon {
     fill: #000000;
     margin: 5px;
 }
@@ -746,7 +740,7 @@ button:hover, button:focus {
     transition: opacity 1s cubic-bezier(0.19, 1, 0.22, 1), visibility 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.modal-title {
+.modal__title {
     font-weight: bold;
     font-size: 20px;
     line-height: 1.1;
@@ -756,13 +750,13 @@ button:hover, button:focus {
     margin-top: 40px;
 }
 
-.modal-formularz {
+.form {
     width: 448px;
     margin: 12px 40px;
     padding: 0;
 }
 
-.dane {
+.form-label {
     font-size: 12px;
     line-height: 1.1;
     letter-spacing: 0.01em;
@@ -770,7 +764,7 @@ button:hover, button:focus {
     padding: 0;
 }
 
-.input {
+.form-label__input {
     width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -782,25 +776,27 @@ button:hover, button:focus {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:focus-within,
-.input2:focus-within {
+.form-label__input:focus-within,
+.form-label__input2:focus-within {
     border-color: #2196f3;
     color: #2196f3;
 }
 
-.icon-person, .icon-phone, .icon-email {
+.form-label__input-icon-person, 
+.form-label__input-icon-phone, 
+.form-label__input-icon-email {
     margin-left: 12px;
     margin-right: 12px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input:focus-within > .icon-person,
-.input:focus-within > .icon-phone,
-.input:focus-within > .icon-email {
+.form-label__input:focus-within > .form-label__input-icon-person,
+.form-label__input:focus-within > .form-label__input-icon-phone,
+.form-label__input:focus-within > .form-label__input-icon-email {
     fill: #2196f3;
 }
 
-.text-area {
+.form-label__input-text-area {
     width: 100%;
     height: 100%;
     border: none;
@@ -810,7 +806,7 @@ button:hover, button:focus {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input2 {
+.form-label__input2 {
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -820,7 +816,7 @@ button:hover, button:focus {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.text-area2 {
+.form-label__input-text-area2 {
     width: 100%;
     height: 100%;
     border: none;
@@ -831,13 +827,13 @@ button:hover, button:focus {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.oświadczenie {
+.statement {
     margin-top: 20px;
     display: flex;
     justify-content: center;
 }
 
-.oświadczenie-tekst {
+.statement__text {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -845,7 +841,12 @@ button:hover, button:focus {
     position: relative;
 }
 
-.oświadczenie-tekst::before {
+.statement__text:hover,
+.statement__text:focus {
+    cursor: pointer;
+}
+
+.statement__text::before {
     display: inline-block;
     position: relative;
     content: "";
@@ -857,19 +858,19 @@ button:hover, button:focus {
     left: -3px;
 }
 
-.checkbox:checked + .oświadczenie-tekst::before {
+.statement__checkbox:checked + .statement__text::before {
     border: none;
     background-image: url(images/icon-check.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-.oświadczenie-podkreślenie {
+.statement__text--underline {
     text-decoration: underline;
     color: #2196F3;
 }
 
-.formularz-button {
+.form__button {
     width: 200px;
     height: 50px;
     margin: 30px 124px;
