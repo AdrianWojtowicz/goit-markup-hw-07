@@ -1,0 +1,31 @@
+.tel-menu:hover,
+.tel-menu:focus,
+.email-menu:hover,
+.email-menu:focus {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.email-menu, .tel-menu {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: var(--third-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.email-menu {
+    width: 161px;
+    margin-left: 345px;
+}
+
+.tel-menu {
+    width: 130px;
+    margin-left: 30px;
+}
+
+.email-menu__icon, .tel-menu__icon {
+    fill: currentColor;
+}
