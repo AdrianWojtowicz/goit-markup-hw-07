@@ -11,39 +11,39 @@
     margin: 0px;
     display: flex;
     justify-content: space-between;
-}
 
-.advantages-table__list--icon {
-    width: 270px;
-    height: 120px;
-    background: #F5F4FA;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    &__list {
+        width: 270px;
+    }
 
-.advantages-table__list {
-    width: 270px;
-}
+    &__list--icon {
+        width: 270px;
+        height: 120px;
+        background: #F5F4FA;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.advantages-table__list--head {
-    font-weight: bold;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--secondary-color);
-    margin:0px;
-    margin-top: 30px;
-}
+    &__list--head {
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--secondary-color);
+        margin:0px;
+        margin-top: 30px;
+    }
 
-.advantages-table__list--text {
-    width: 270px;
-    height: 75px;
-    margin-top: 10px;
-    margin-bottom: 0px;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--third-color);
-} 
+    &__list--text {
+        width: 270px;
+        height: 75px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+        color: var(--third-color);
+    } 
+}

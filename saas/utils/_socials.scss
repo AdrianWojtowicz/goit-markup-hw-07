@@ -5,38 +5,39 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
 
-.social-icon--background{
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &--background{
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-.social-icon--background:hover, .social-icon--background:focus {
-    background-color: var(--main-color);
-    cursor: pointer;
-}
+    &__instagram, 
+    &__twitter, 
+    &__facebook, 
+    &__linkedin {
+        fill: #afb1b8;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-.social-icon--background:hover > .social-icon__instagram, 
-.social-icon--background:hover > .social-icon__twitter, 
-.social-icon--background:hover > .social-icon__facebook, 
-.social-icon--background:hover > .social-icon__linkedin,
-.social-icon--background:focus > .social-icon__instagram, 
-.social-icon--background:focus > .social-icon__twitter, 
-.social-icon--background:focus > .social-icon__facebook, 
-.social-icon--background:focus > .social-icon__linkedin {
-    fill: #fff;
-}
+    &--background:hover, 
+    &--background:focus {
+        background-color: var(--main-color);
+        cursor: pointer;
+    }
 
-.social-icon__instagram, 
-.social-icon__twitter, 
-.social-icon__facebook, 
-.social-icon__linkedin {
-    fill: #afb1b8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &--background:hover > &__instagram, 
+    &--background:hover > &__twitter, 
+    &--background:hover > &__facebook, 
+    &--background:hover > &__linkedin,
+    &--background:focus > &__instagram, 
+    &--background:focus > &__twitter, 
+    &--background:focus > &__facebook, 
+    &--background:focus > &__linkedin {
+        fill: #fff;
+    }
 }

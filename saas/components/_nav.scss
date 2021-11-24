@@ -6,7 +6,8 @@
     align-items: center;
 }
 
-.nav__agency, .nav__agency--active{
+.nav__agency, 
+.nav__agency--active{
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -23,7 +24,8 @@
     color: var(--main-color);
 }
 
-.nav__portfolio, .nav__portfolio--active {
+.nav__portfolio, 
+.nav__portfolio--active {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
@@ -41,10 +43,12 @@
     color: var(--main-color);
 }
 
-.nav__agency--active, .nav__portfolio--active {
+.nav__agency--active, 
+.nav__portfolio--active {
     position: relative;
 }
-.nav__agency--active::after, .nav__portfolio--active::after {
+.nav__agency--active::after, 
+.nav__portfolio--active::after {
     content: "";
     position: absolute;
     height: 4px;
@@ -61,7 +65,6 @@
 .nav__portfolio--active::after {
     width: 58px;
 }
-
 
 .nav__contact {
     font-weight: 500;
