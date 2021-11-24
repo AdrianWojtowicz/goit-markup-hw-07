@@ -25,10 +25,10 @@
         border-radius: 4px;
         padding-left: 16px;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
 
-    &__email:focus {
-        border-color: var(--main-color);
+        &:focus {
+            border-color: var(--main-color);
+        }
     }
 
     &__button {
@@ -43,10 +43,10 @@
         align-items: center;
         padding: 10px;
         padding-left: 42px;
-    }
 
-    &__button--icon-send {
-        fill: #fff;
-        margin-left: 24px;
+        &--icon-send {
+            fill: #fff;
+            margin-left: 24px;
+        }
     }
 }
